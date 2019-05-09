@@ -82,11 +82,11 @@ public class TestMultiplication {
 		int b = 5;
 		int c = 10;
 		int expectedANS = 350;
-		ArrayList<Integer> array = new ArrayList<Integer>(Arrays.asList(a, b    , c));
+		ArrayList<Integer> array = new ArrayList<Integer>(Arrays.asList(a, b, c));
 
 		Factorization factorizationStub = mock(Factorization.class);
-		when(factorizationStub.factorization(expectedANS)).thenReturn(array)    ;
-		when(factorizationStub.factorizationRoot(anyInt(), anyBoolean())).th    enReturn(-1);
+		when(factorizationStub.factorization(expectedANS)).thenReturn(array);
+		when(factorizationStub.factorizationRoot(anyInt(), anyBoolean())).thenReturn(-1);
 
 		Multiplication multiplication = new Multiplication();
 		int actualANS = multiplication.multiplicationWithFactorizationAbsolute(factorizationStub, expectedANS);
@@ -103,8 +103,8 @@ public class TestMultiplication {
 		ArrayList<Integer> array = new ArrayList<Integer>(Arrays.asList(a));
 		
 		Factorization factorizationStub = mock(Factorization.class);
-		when(factorizationStub.factorization(expectedANS)).thenReturn(array)    ;
-		when(factorizationStub.factorizationRoot(anyInt(), anyBoolean())).th    enReturn(-1);
+		when(factorizationStub.factorization(expectedANS)).thenReturn(array);
+		when(factorizationStub.factorizationRoot(anyInt(), anyBoolean())).thenReturn(-1);
 
 		Multiplication multiplication = new Multiplication();
 		int actualANS = multiplication.multiplicationWithFactorizationAbsolute(factorizationStub, expectedANS);
